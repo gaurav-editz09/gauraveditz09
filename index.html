@@ -3,7 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GAURAVEDITZ09 | Next-Gen Studio</title>
+    <title>GAURAVEDITZ09</title>
+    <meta name="description" content="Portfolio of Gaurav Sinha (GAURAVEDITZ09) - Freelance Creative Designer and Content Creator based in Purnea, Bihar.">
+    
+    <!-- Google Structured Data for Personal Branding & Photo Indexing -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Person",
+      "name": "Gaurav Sinha",
+      "alternateName": "GAURAVEDITZ09",
+      "url": "https://gaurav-editz09.github.io/gauraveditz09/",
+      "image": "https://gaurav-editz09.github.io/gauraveditz09/card.png",
+      "jobTitle": "Freelance Creative Designer and Content Creator",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Purnea",
+        "addressRegion": "Bihar",
+        "addressCountry": "India"
+      },
+      "sameAs": [
+        "https://www.instagram.com/gaurav_editz09"
+      ]
+    }
+    </script>
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts: Inter & Outfit -->
@@ -53,8 +77,8 @@
 
         .matrix-bg {
             background-image: radial-gradient(circle at 50% 10%, rgba(212, 175, 55, 0.07) 0%, transparent 60%),
-                              linear-gradient(to right, rgba(212, 175, 55, 0.02) 1px, transparent 1px),
-                              linear-gradient(to bottom, rgba(212, 175, 55, 0.02) 1px, transparent 1px);
+                            linear-gradient(to right, rgba(212, 175, 55, 0.02) 1px, transparent 1px),
+                            linear-gradient(to bottom, rgba(212, 175, 55, 0.02) 1px, transparent 1px);
             background-size: 100% 100%, 30px 30px, 30px 30px;
         }
 
@@ -466,40 +490,50 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About Section with Big Profile Photo Display -->
     <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
-            <div class="lg:col-span-6 space-y-6">
-                <span class="text-xs uppercase tracking-widest text-gold-400 font-bold px-4 py-1.5 rounded-full glass-panel border border-gold-500/20">About My Work</span>
-                <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-white tracking-tight">GAURAVEDITZ09 STUDIO</h2>
-                
-                <p class="text-slate-300 text-base leading-relaxed font-light">
-                    "I create visually engaging poster and social-media creatives for schools, educational institutions, events and businesses. My designs combine strategic messaging with compelling visuals to help organizations connect with their audiences."
-                </p>
-
-                <div class="pt-4 flex items-center gap-4">
-                    <div class="w-14 h-14 rounded-2xl gold-button p-0.5 shadow-lg">
-                        <div class="w-full h-full bg-cyber-950 rounded-[14px] flex items-center justify-center text-gold-400 font-heading font-black text-xl">GS</div>
-                    </div>
-                    <div>
-                        <h3 class="font-heading font-bold text-white text-lg">Gaurav Sinha</h3>
-                        <p class="text-xs text-gold-400 font-semibold">Certified Poster & Creative Designer — Purnia, Bihar</p>
+            <!-- Big Photo for Google & Visual Showcase -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-gold-500 to-amber-600 rounded-3xl blur opacity-30 group-hover:opacity-75 transition duration-500"></div>
+                    <div class="relative w-64 h-64 sm:w-72 sm:h-72 rounded-3xl overflow-hidden border-2 border-gold-500/50 bg-cyber-900 shadow-2xl">
+                        <img src="card.png" alt="Gaurav Sinha - GAURAVEDITZ09" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://placehold.co/300x300/05050a/d4af37?text=Gaurav+Sinha';">
                     </div>
                 </div>
             </div>
 
-            <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div class="glass-panel p-6 rounded-3xl space-y-3 border border-gold-500/20">
-                    <div class="w-10 h-10 rounded-xl bg-gold-500/20 text-gold-400 flex items-center justify-center text-base font-bold border border-gold-500/30"><i class="fa-solid fa-school"></i></div>
-                    <h3 class="font-heading font-bold text-white text-lg">Schools & Institutes</h3>
-                    <p class="text-xs text-slate-400 leading-relaxed">Admission campaigns and pamphlets tailored for educational institutions.</p>
+            <div class="lg:col-span-7 space-y-6">
+                <span class="text-xs uppercase tracking-widest text-gold-400 font-bold px-4 py-1.5 rounded-full glass-panel border border-gold-500/20">About My Work</span>
+                <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-white tracking-tight">GAURAVEDITZ09</h2>
+                
+                <p class="text-slate-300 text-base leading-relaxed font-light">
+                    "I create visually engaging poster designs, promotional banners, and social-media creatives for <strong>all types of businesses, cafes, shops, schools, educational institutes, and events</strong>. My designs combine strategic messaging with compelling visuals to help brands stand out."
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                    <div class="glass-panel p-4 rounded-2xl border border-gold-500/20 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-gold-500/20 text-gold-400 flex items-center justify-center text-base font-bold flex-shrink-0 border border-gold-500/30"><i class="fa-solid fa-store"></i></div>
+                        <div>
+                            <h3 class="font-heading font-bold text-white text-sm">Businesses & Cafes</h3>
+                            <p class="text-[11px] text-slate-400">Promos & branding</p>
+                        </div>
+                    </div>
+                    <div class="glass-panel p-4 rounded-2xl border border-gold-500/20 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-gold-500/20 text-gold-400 flex items-center justify-center text-base font-bold flex-shrink-0 border border-gold-500/30"><i class="fa-solid fa-video"></i></div>
+                        <div>
+                            <h3 class="font-heading font-bold text-white text-sm">Voiceover Ads</h3>
+                            <p class="text-[11px] text-slate-400">Studio production</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="glass-panel p-6 rounded-3xl space-y-3 border border-gold-500/20">
-                    <div class="w-10 h-10 rounded-xl bg-gold-500/20 text-gold-400 flex items-center justify-center text-base font-bold border border-gold-500/30"><i class="fa-solid fa-video"></i></div>
-                    <h3 class="font-heading font-bold text-white text-lg">Voiceover Ads</h3>
-                    <p class="text-xs text-slate-400 leading-relaxed">Studio-grade commercial voiceover advertisement production.</p>
+                <div class="pt-2 flex items-center gap-4">
+                    <div>
+                        <h3 class="font-heading font-bold text-white text-lg">Gaurav Sinha</h3>
+                        <p class="text-xs text-gold-400 font-semibold">Certified Creative Designer — Purnia, Bihar</p>
+                    </div>
                 </div>
             </div>
 
