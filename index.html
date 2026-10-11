@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GAURAVEDITZ09</title>
-    <meta name="description" content="Portfolio of Gaurav Sinha (GAURAVEDITZ09) - Freelance Website Designing, Google Publishing, Graphic Design and Voiceover Services based in Purnea, Bihar.">
+    <meta name="description" content="Portfolio of Gaurav Sinha (GAURAVEDITZ09) - Certified Web Developer, Graphic Designer and Voiceover Services based in Purnea, Bihar.">
     
     <!-- Favicon / Browser Tab Photo -->
-    <link rel="icon" type="image/png" href="card.png">
+    <link rel="icon" type="image/png" href="card.png" onerror="this.href='https://placehold.co/32x32/070709/d4af37?text=GE';">
 
-    <!-- Open Graph Meta Tags for Google & Social Media Preview Photo -->
-    <meta property="og:title" content="GAURAVEDITZ09 | Mobile-First Creative & Web Studio">
-    <meta property="og:description" content="Portfolio of Gaurav Sinha - Professional Website Designing, Google Publishing, Graphic Design & Voiceover Services based in Purnea, Bihar.">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="GAURAVEDITZ09 | Certified Web Developer & Designer">
+    <meta property="og:description" content="Portfolio of Gaurav Sinha - Professional Web Designing, Google Publishing & Graphic Design based in Purnea, Bihar.">
     <meta property="og:image" content="https://gaurav-editz09.github.io/gauraveditz09/card.png">
     <meta property="og:url" content="https://gaurav-editz09.github.io/gauraveditz09/">
     <meta property="og:type" content="website">
 
-    <!-- Google Structured Data for Personal Branding & Photo Indexing -->
+    <!-- Google Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org/",
@@ -25,7 +25,7 @@
       "alternateName": "GAURAVEDITZ09",
       "url": "https://gaurav-editz09.github.io/gauraveditz09/",
       "image": "https://gaurav-editz09.github.io/gauraveditz09/card.png",
-      "jobTitle": "Freelance Website Designer, Google Publisher and Graphic Designer",
+      "jobTitle": "Certified Responsive Web Developer & Graphic Designer",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Purnea",
@@ -74,8 +74,8 @@
                         heading: ['Outfit', 'sans-serif'],
                     },
                     boxShadow: {
-                        'neon-gold': '0 0 35px rgba(212, 175, 55, 0.2)',
-                        'deep-card': '0 25px 50px -12px rgba(0, 0, 0, 0.8)'
+                        'neon-gold': '0 0 40px rgba(212, 175, 55, 0.25)',
+                        'deep-card': '0 25px 50px -12px rgba(0, 0, 0, 0.9)'
                     }
                 }
             }
@@ -88,20 +88,21 @@
         ::-webkit-scrollbar-thumb { background: #d4af37; border-radius: 2px; }
 
         .studio-bg {
-            background-image: radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.08) 0%, transparent 50%),
-                            radial-gradient(circle at 10% 90%, rgba(212, 175, 55, 0.04) 0%, transparent 40%);
+            background-image: radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.1) 0%, transparent 60%),
+                            radial-gradient(circle at 10% 90%, rgba(212, 175, 55, 0.05) 0%, transparent 50%);
         }
 
         .glass-panel {
             background: rgba(19, 19, 26, 0.85);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(212, 175, 55, 0.18);
-            transition: all 0.3s ease;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
         .glass-panel:hover {
-            border-color: rgba(212, 175, 55, 0.45);
-            transform: translateY(-2px);
+            border-color: rgba(212, 175, 55, 0.55);
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.2);
+            transform: translateY(-3px);
         }
 
         .gold-gradient-text {
@@ -112,11 +113,19 @@
 
         .gold-button {
             background: linear-gradient(135deg, #fef08a 0%, #d4af37 50%, #9a7612 100%);
-            box-shadow: 0 0 25px rgba(212, 175, 55, 0.3);
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.35);
             transition: all 0.3s ease;
         }
         .gold-button:active {
             transform: scale(0.97);
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.6; transform: scale(1.05); }
+        }
+        .badge-pulse {
+            animation: pulse-glow 2s infinite ease-in-out;
         }
     </style>
 </head>
@@ -128,20 +137,23 @@
     </a>
 
     <!-- Top Glow Header Accent -->
-    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[250px] bg-gradient-to-b from-gold-500/10 via-transparent to-transparent pointer-events-none -z-10 blur-3xl"></div>
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[300px] bg-gradient-to-b from-gold-500/15 via-transparent to-transparent pointer-events-none -z-10 blur-3xl"></div>
 
-    <!-- Mobile-First Header -->
+    <!-- Mobile-First Header with Status Indicator -->
     <header class="fixed top-3 left-3 right-3 z-50 max-w-7xl mx-auto" data-aos="fade-down" data-aos-duration="800">
         <div class="glass-panel rounded-2xl px-4 h-14 flex items-center justify-between shadow-2xl">
-            <!-- Logo -->
-            <a href="#" class="flex items-center gap-2">
+            <!-- Logo & Live Status -->
+            <a href="#" class="flex items-center gap-2.5">
                 <img src="logo.png" alt="Logo" class="h-7 w-auto object-contain" onerror="this.onerror=null; this.src='https://placehold.co/90x28/0c0c10/d4af37?text=GE09';">
+                <div class="hidden sm:flex items-center gap-1.5 bg-emerald-500/10 border border-emerald-500/30 px-2 py-0.5 rounded-full">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 badge-pulse"></span>
+                    <span class="text-[9px] font-bold text-emerald-400 uppercase tracking-wider">Available</span>
+                </div>
             </a>
 
-            <!-- Quick Actions -->
+            <!-- Quick Actions (Certificates removed as requested) -->
             <div class="flex items-center gap-2">
-                <a href="#services" class="text-[11px] font-bold text-gold-400 px-3 py-1 rounded-xl glass-panel border border-gold-500/30">Services</a>
-                <a href="#contact" class="px-3 py-1 rounded-xl gold-button text-cyber-950 font-extrabold text-[11px] uppercase tracking-wider">Contact</a>
+                <a href="#contact" class="px-3.5 py-1.5 rounded-xl gold-button text-cyber-950 font-extrabold text-[11px] uppercase tracking-wider">Contact</a>
             </div>
         </div>
     </header>
@@ -149,21 +161,25 @@
     <!-- Hero Section -->
     <section class="relative min-h-[75vh] flex items-center justify-center pt-28 pb-12 px-4 text-center">
         <div class="max-w-3xl mx-auto space-y-5 relative z-10" data-aos="fade-up" data-aos-duration="1000">
-            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full glass-panel text-[10px] font-bold text-gold-400 uppercase tracking-widest border border-gold-500/30 shadow-neon-gold">
-                <i class="fa-solid fa-wand-magic-sparkles text-gold-400"></i> Professional Studio
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-panel text-[10px] font-bold text-gold-400 uppercase tracking-widest border border-gold-500/40 shadow-neon-gold">
+                <span class="w-2 h-2 rounded-full bg-gold-400 badge-pulse"></span> Certified Web Developer & Elite Creator
             </div>
 
             <!-- Business Name with Certified Badge -->
             <div class="flex flex-col items-center justify-center gap-3">
-                <h1 class="font-heading font-black text-3xl sm:text-6xl tracking-tight text-white leading-tight">
+                <h1 class="font-heading font-black text-4xl sm:text-7xl tracking-tight text-white leading-tight">
                     GAURAV<span class="gold-gradient-text">EDITZ09</span>
                 </h1>
-                <!-- Official Canva Certified Badge Display -->
-                <div class="flex items-center gap-2 bg-cyber-900/90 border border-gold-500/40 px-3 py-1.5 rounded-xl shadow-neon-gold">
-                    <img src="badge.png" alt="Canva Certified" class="w-6 h-6 object-contain" onerror="this.onerror=null; this.src='https://placehold.co/24x24/070709/d4af37?text=✓';">
-                    <div class="text-left">
-                        <div class="text-[8px] uppercase font-bold text-gold-400 tracking-wider">Canva Certified</div>
-                        <div class="text-[9px] text-slate-300 font-medium">Graphic Designer</div>
+                
+                <!-- Modern Badges Grid -->
+                <div class="flex flex-wrap items-center justify-center gap-2.5 pt-1">
+                    <div class="flex items-center gap-2 bg-cyber-900/90 border border-gold-500/40 px-3.5 py-1.5 rounded-xl shadow-neon-gold">
+                        <img src="badge.png" alt="Canva Certified" class="w-5 h-5 object-contain" onerror="this.onerror=null; this.src='https://placehold.co/20x20/070709/d4af37?text=✓';">
+                        <span class="text-[9px] uppercase font-bold text-gold-400 tracking-wider">Canva Certified</span>
+                    </div>
+                    <div class="flex items-center gap-2 bg-cyber-900/90 border border-gold-500/40 px-3.5 py-1.5 rounded-xl shadow-neon-gold">
+                        <i class="fa-solid fa-code text-gold-400 text-xs"></i>
+                        <span class="text-[9px] uppercase font-bold text-gold-400 tracking-wider">freeCodeCamp Developer</span>
                     </div>
                 </div>
             </div>
@@ -173,11 +189,11 @@
             </p>
 
             <div class="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3">
-                <a href="#services" class="w-full sm:w-auto px-6 py-3 rounded-xl gold-button text-cyber-950 font-black text-xs uppercase tracking-wider flex items-center justify-center gap-2">
-                    <span>Explore Services</span>
+                <a href="#services" class="w-full sm:w-auto px-7 py-3.5 rounded-xl gold-button text-cyber-950 font-black text-xs uppercase tracking-wider flex items-center justify-center gap-2">
+                    <span>Explore Our Services</span>
                     <i class="fa-solid fa-arrow-down text-xs"></i>
                 </a>
-                <a href="https://wa.me/919122744923?text=Hi%20Gaurav,%20I%20want%20to%20discuss%20a%20project." target="_blank" class="w-full sm:w-auto px-6 py-3 rounded-xl glass-panel text-slate-200 font-bold text-xs uppercase tracking-wider border border-gold-500/30 flex items-center justify-center gap-2">
+                <a href="https://wa.me/919122744923?text=Hi%20Gaurav,%20I%20want%20to%20discuss%20a%20project." target="_blank" class="w-full sm:w-auto px-7 py-3.5 rounded-xl glass-panel text-slate-200 font-bold text-xs uppercase tracking-wider border border-gold-500/30 flex items-center justify-center gap-2">
                     <i class="fa-brands fa-whatsapp text-emerald-400 text-base"></i>
                     <span>Direct WhatsApp</span>
                 </a>
@@ -185,9 +201,50 @@
         </div>
     </section>
 
+    <!-- PROFESSIONAL CERTIFICATION SECTION -->
+    <section id="certification" class="py-16 px-4 max-w-4xl mx-auto" data-aos="fade-up">
+        <div class="mb-10 text-center space-y-2">
+            <span class="text-[10px] uppercase tracking-widest text-gold-400 font-bold px-3.5 py-1 rounded-full glass-panel border border-gold-500/30 shadow-neon-gold">Verified Credentials & Degrees</span>
+            <h2 class="font-heading font-extrabold text-2xl sm:text-4xl text-white">OFFICIAL CERTIFICATIONS</h2>
+            <p class="text-slate-400 text-xs font-light max-w-md mx-auto">Internationally recognized certifications backing professional technical and creative expertise.</p>
+        </div>
+
+        <div class="space-y-6">
+            <!-- 1. freeCodeCamp Responsive Web Design Certificate -->
+            <div class="glass-panel p-5 sm:p-7 rounded-3xl border border-gold-500/40 shadow-2xl space-y-4 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 bg-gold-500/10 text-gold-400 text-[9px] font-extrabold uppercase px-4 py-1 rounded-bl-2xl border-l border-b border-gold-500/30">Primary Tech Credential</div>
+                <div class="rounded-2xl overflow-hidden border border-gold-500/30 bg-cyber-950 shadow-inner">
+                    <img src="web.png" alt="freeCodeCamp Responsive Web Design Certification" class="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-[1.01]" onerror="this.onerror=null; this.src='https://placehold.co/800x600/070709/d4af37?text=freeCodeCamp+Certificate+(web.png)';">
+                </div>
+                <div class="space-y-1 text-center sm:text-left pt-1">
+                    <div class="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-gold-500/10 text-gold-400 text-[10px] font-bold uppercase tracking-wider border border-gold-500/30 mb-1">
+                        <i class="fa-solid fa-code"></i> freeCodeCamp.org
+                    </div>
+                    <h3 class="font-heading font-extrabold text-lg text-white">Responsive Web Design Developer Certification</h3>
+                    <p class="text-slate-300 text-xs font-light">Representing approximately 300 hours of rigorous web development work.</p>
+                </div>
+            </div>
+
+            <!-- 2. Canva Graphic Design Certificate -->
+            <div class="glass-panel p-5 sm:p-7 rounded-3xl border border-gold-500/40 shadow-2xl space-y-4 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 bg-gold-500/10 text-gold-400 text-[9px] font-extrabold uppercase px-4 py-1 rounded-bl-2xl border-l border-b border-gold-500/30">Design Credential</div>
+                <div class="rounded-2xl overflow-hidden border border-gold-500/30 bg-cyber-950 shadow-inner">
+                    <img src="certificate.png" alt="Graphic Design Essentials Certificate" class="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-[1.01]" onerror="this.onerror=null; this.src='https://placehold.co/800x600/070709/d4af37?text=Canva+Certificate';">
+                </div>
+                <div class="space-y-1 text-center sm:text-left pt-1">
+                    <div class="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-gold-500/10 text-gold-400 text-[10px] font-bold uppercase tracking-wider border border-gold-500/30 mb-1">
+                        <i class="fa-solid fa-award"></i> Canva Design School
+                    </div>
+                    <h3 class="font-heading font-extrabold text-lg text-white">Graphic Design Essentials Certification</h3>
+                    <p class="text-slate-300 text-xs font-light">Certified expertise in core design principles, typography, and visual branding.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- OUR SERVICES SECTION -->
-    <section id="services" class="py-16 px-4 max-w-7xl mx-auto">
-        <div class="mb-10 text-center space-y-2" data-aos="fade-up">
+    <section id="services" class="py-16 px-4 max-w-7xl mx-auto" data-aos="fade-up">
+        <div class="mb-10 text-center space-y-2">
             <span class="text-[10px] uppercase tracking-widest text-gold-400 font-bold px-3 py-1 rounded-full glass-panel border border-gold-500/20">What We Offer</span>
             <h2 class="font-heading font-extrabold text-2xl sm:text-4xl text-white">OUR SERVICES</h2>
             <p class="text-slate-300 text-xs max-w-lg mx-auto font-light">
@@ -196,315 +253,140 @@
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div class="glass-panel p-6 rounded-2xl border border-gold-500/30 space-y-3" data-aos="fade-up" data-aos-delay="100">
-                <div class="w-11 h-11 rounded-xl bg-gold-500/20 text-gold-400 flex items-center justify-center text-xl border border-gold-500/30">
-                    <i class="fa-solid fa-laptop-code"></i>
-                </div>
+            <div class="glass-panel p-6 rounded-2xl border border-gold-500/30 space-y-3">
+                <div class="w-11 h-11 rounded-xl bg-gold-500/20 text-gold-400 flex items-center justify-center text-xl border border-gold-500/30"><i class="fa-solid fa-laptop-code"></i></div>
                 <h3 class="font-heading font-bold text-white text-base">Website Design & Google Publishing</h3>
-                <p class="text-slate-300 text-xs font-light leading-relaxed">
-                    Custom responsive websites designed and officially indexed & published on Google Search results.
-                </p>
+                <p class="text-slate-300 text-xs font-light leading-relaxed">Custom responsive websites designed and officially indexed & published on Google Search results.</p>
             </div>
-
-            <div class="glass-panel p-6 rounded-2xl border border-gold-500/30 space-y-3" data-aos="fade-up" data-aos-delay="200">
-                <div class="w-11 h-11 rounded-xl bg-gold-500/20 text-gold-400 flex items-center justify-center text-xl border border-gold-500/30">
-                    <i class="fa-solid fa-bullhorn"></i>
-                </div>
+            <div class="glass-panel p-6 rounded-2xl border border-gold-500/30 space-y-3">
+                <div class="w-11 h-11 rounded-xl bg-gold-500/20 text-gold-400 flex items-center justify-center text-xl border border-gold-500/30"><i class="fa-solid fa-bullhorn"></i></div>
                 <h3 class="font-heading font-bold text-white text-base">Pamphlets & Admission Posters</h3>
-                <p class="text-slate-300 text-xs font-light leading-relaxed">
-                    Eye-catching school admission pamphlets, coaching banners, and promotional posters.
-                </p>
+                <p class="text-slate-300 text-xs font-light leading-relaxed">Eye-catching school admission pamphlets, coaching banners, and promotional posters.</p>
             </div>
-
-            <div class="glass-panel p-6 rounded-2xl border border-gold-500/30 space-y-3" data-aos="fade-up" data-aos-delay="300">
-                <div class="w-11 h-11 rounded-xl bg-gold-500/20 text-gold-400 flex items-center justify-center text-xl border border-gold-500/30">
-                    <i class="fa-solid fa-envelope-open-text"></i>
-                </div>
+            <div class="glass-panel p-6 rounded-2xl border border-gold-500/30 space-y-3">
+                <div class="w-11 h-11 rounded-xl bg-gold-500/20 text-gold-400 flex items-center justify-center text-xl border border-gold-500/30"><i class="fa-solid fa-envelope-open-text"></i></div>
                 <h3 class="font-heading font-bold text-white text-base">Invitation Design Samples</h3>
-                <p class="text-slate-300 text-xs font-light leading-relaxed">
-                    Stunning digital and printable invitation cards for weddings, birthdays, and grand openings.
-                </p>
+                <p class="text-slate-300 text-xs font-light leading-relaxed">Stunning digital and printable invitation cards for weddings, birthdays, and grand openings.</p>
             </div>
-
-            <div class="glass-panel p-6 rounded-2xl border border-gold-500/30 space-y-3" data-aos="fade-up" data-aos-delay="100">
-                <div class="w-11 h-11 rounded-xl bg-gold-500/20 text-gold-400 flex items-center justify-center text-xl border border-gold-500/30">
-                    <i class="fa-solid fa-calendar-days"></i>
-                </div>
+            <div class="glass-panel p-6 rounded-2xl border border-gold-500/30 space-y-3">
+                <div class="w-11 h-11 rounded-xl bg-gold-500/20 text-gold-400 flex items-center justify-center text-xl border border-gold-500/30"><i class="fa-solid fa-calendar-days"></i></div>
                 <h3 class="font-heading font-bold text-white text-base">Festival Wishes Showcase</h3>
-                <p class="text-slate-300 text-xs font-light leading-relaxed">
-                    Custom festival greeting posts and branded creatives for all major celebrations.
-                </p>
+                <p class="text-slate-300 text-xs font-light leading-relaxed">Custom festival greeting posts and branded creatives for all major celebrations.</p>
             </div>
-
-            <div class="glass-panel p-6 rounded-2xl border border-gold-500/30 space-y-3" data-aos="fade-up" data-aos-delay="200">
-                <div class="w-11 h-11 rounded-xl bg-gold-500/20 text-gold-400 flex items-center justify-center text-xl border border-gold-500/30">
-                    <i class="fa-solid fa-share-nodes"></i>
-                </div>
+            <div class="glass-panel p-6 rounded-2xl border border-gold-500/30 space-y-3">
+                <div class="w-11 h-11 rounded-xl bg-gold-500/20 text-gold-400 flex items-center justify-center text-xl border border-gold-500/30"><i class="fa-solid fa-share-nodes"></i></div>
                 <h3 class="font-heading font-bold text-white text-base">Social Media Creatives</h3>
-                <p class="text-slate-300 text-xs font-light leading-relaxed">
-                    Engaging Instagram posts, stories, carousels, and YouTube thumbnails.
-                </p>
+                <p class="text-slate-300 text-xs font-light leading-relaxed">Engaging Instagram posts, stories, carousels, and YouTube thumbnails.</p>
             </div>
-
-            <div class="glass-panel p-6 rounded-2xl border border-gold-500/30 space-y-3" data-aos="fade-up" data-aos-delay="300">
-                <div class="w-11 h-11 rounded-xl bg-gold-500/20 text-gold-400 flex items-center justify-center text-xl border border-gold-500/30">
-                    <i class="fa-solid fa-microphone-lines"></i>
-                </div>
+            <div class="glass-panel p-6 rounded-2xl border border-gold-500/30 space-y-3">
+                <div class="w-11 h-11 rounded-xl bg-gold-500/20 text-gold-400 flex items-center justify-center text-xl border border-gold-500/30"><i class="fa-solid fa-microphone-lines"></i></div>
                 <h3 class="font-heading font-bold text-white text-base">Portrait Voiceover Ads</h3>
-                <p class="text-slate-300 text-xs font-light leading-relaxed">
-                    Studio-grade vertical video ads paired with professional voiceovers for reels and shorts.
-                </p>
+                <p class="text-slate-300 text-xs font-light leading-relaxed">Studio-grade vertical video ads paired with professional voiceovers for reels and shorts.</p>
             </div>
         </div>
     </section>
 
     <!-- 1. PAMPHLETS & ADMISSION POSTERS -->
     <section id="pamphlets" class="py-16 px-4 max-w-7xl mx-auto" data-aos="fade-up">
-        <div class="mb-8 text-center">
-            <h2 class="font-heading font-extrabold text-xl sm:text-3xl text-white">PAMPHLETS & ADMISSION POSTERS</h2>
-        </div>
-
+        <div class="mb-8 text-center"><h2 class="font-heading font-extrabold text-xl sm:text-3xl text-white">PAMPHLETS & ADMISSION POSTERS</h2></div>
         <div class="relative max-w-xs sm:max-w-sm mx-auto">
             <div id="slider-container-1" class="overflow-hidden rounded-2xl glass-panel border border-gold-500/30 shadow-2xl bg-cyber-900">
                 <div id="slider-track-1" class="flex transition-transform duration-500 ease-in-out">
-                    <div class="min-w-full aspect-[3/4] relative flex items-center justify-center bg-cyber-950">
-                        <img src="a.png" alt="Pamphlet 1" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/600x800/0c0c10/d4af37?text=Pamphlet+1';">
-                    </div>
-                    <div class="min-w-full aspect-[3/4] relative flex items-center justify-center bg-cyber-950">
-                        <img src="a2.png" alt="Pamphlet 2" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/600x800/0c0c10/d4af37?text=Pamphlet+2';">
-                    </div>
-                    <div class="min-w-full aspect-[3/4] relative flex items-center justify-center bg-cyber-950">
-                        <img src="a3.png" alt="Pamphlet 3" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/600x800/0c0c10/d4af37?text=Pamphlet+3';">
-                    </div>
-                    <div class="min-w-full aspect-[3/4] relative flex items-center justify-center bg-cyber-950">
-                        <img src="a4.png" alt="Pamphlet 4" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/600x800/0c0c10/d4af37?text=Pamphlet+4';">
-                    </div>
-                    <div class="min-w-full aspect-[3/4] relative flex items-center justify-center bg-cyber-950">
-                        <img src="a5.png" alt="Pamphlet 5" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/600x800/0c0c10/d4af37?text=Pamphlet+5';">
-                    </div>
-                    <div class="min-w-full aspect-[3/4] relative flex items-center justify-center bg-cyber-950">
-                        <img src="a6.png" alt="Pamphlet 6" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/600x800/0c0c10/d4af37?text=Pamphlet+6';">
-                    </div>
+                    <div class="min-w-full aspect-[3/4] relative flex items-center justify-center bg-cyber-950"><img src="a.png" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/600x800/0c0c10/d4af37?text=Pamphlet';"></div>
+                    <div class="min-w-full aspect-[3/4] relative flex items-center justify-center bg-cyber-950"><img src="a2.png" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/600x800/0c0c10/d4af37?text=Pamphlet';"></div>
+                    <div class="min-w-full aspect-[3/4] relative flex items-center justify-center bg-cyber-950"><img src="a3.png" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/600x800/0c0c10/d4af37?text=Pamphlet';"></div>
+                    <div class="min-w-full aspect-[3/4] relative flex items-center justify-center bg-cyber-950"><img src="a4.png" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/600x800/0c0c10/d4af37?text=Pamphlet';"></div>
+                    <div class="min-w-full aspect-[3/4] relative flex items-center justify-center bg-cyber-950"><img src="a5.png" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/600x800/0c0c10/d4af37?text=Pamphlet';"></div>
+                    <div class="min-w-full aspect-[3/4] relative flex items-center justify-center bg-cyber-950"><img src="a6.png" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/600x800/0c0c10/d4af37?text=Pamphlet';"></div>
                 </div>
             </div>
-            <button onclick="prevSlide(1)" class="absolute left-[-12px] top-1/2 -translate-y-1/2 w-9 h-9 rounded-full glass-panel border border-gold-500/40 text-gold-400 flex items-center justify-center shadow-xl z-20" aria-label="Previous">
-                <i class="fa-solid fa-chevron-left text-xs"></i>
-            </button>
-            <button onclick="nextSlide(1)" class="absolute right-[-12px] top-1/2 -translate-y-1/2 w-9 h-9 rounded-full glass-panel border border-gold-500/40 text-gold-400 flex items-center justify-center shadow-xl z-20" aria-label="Next">
-                <i class="fa-solid fa-chevron-right text-xs"></i>
-            </button>
+            <button onclick="prevSlide(1)" class="absolute left-[-12px] top-1/2 -translate-y-1/2 w-9 h-9 rounded-full glass-panel border border-gold-500/40 text-gold-400 flex items-center justify-center shadow-xl z-25" aria-label="Previous"><i class="fa-solid fa-chevron-left text-xs"></i></button>
+            <button onclick="nextSlide(1)" class="absolute right-[-12px] top-1/2 -translate-y-1/2 w-9 h-9 rounded-full glass-panel border border-gold-500/40 text-gold-400 flex items-center justify-center shadow-xl z-25" aria-label="Next"><i class="fa-solid fa-chevron-right text-xs"></i></button>
         </div>
     </section>
 
     <!-- 2. INVITATION DESIGN SAMPLES -->
     <section id="invitations" class="py-16 px-4 max-w-7xl mx-auto" data-aos="fade-up">
-        <div class="mb-8 text-center">
-            <h2 class="font-heading font-extrabold text-xl sm:text-3xl text-white">INVITATION DESIGN SAMPLES</h2>
-        </div>
-
+        <div class="mb-8 text-center"><h2 class="font-heading font-extrabold text-xl sm:text-3xl text-white">INVITATION DESIGN SAMPLES</h2></div>
         <div class="relative max-w-xs sm:max-w-sm mx-auto">
             <div id="slider-container-2" class="overflow-hidden rounded-2xl glass-panel border border-gold-500/30 shadow-2xl bg-cyber-900">
                 <div id="slider-track-2" class="flex transition-transform duration-500 ease-in-out">
-                    <div class="min-w-full aspect-[3/4] relative flex items-center justify-center bg-cyber-950">
-                        <img src="i.png" alt="Invitation 1" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/600x800/0c0c10/d4af37?text=Invitation+1';">
-                    </div>
-                    <div class="min-w-full aspect-[3/4] relative flex items-center justify-center bg-cyber-950">
-                        <img src="i2.png" alt="Invitation 2" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/600x800/0c0c10/d4af37?text=Invitation+2';">
-                    </div>
-                    <div class="min-w-full aspect-[3/4] relative flex items-center justify-center bg-cyber-950">
-                        <img src="i3.png" alt="Invitation 3" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/600x800/0c0c10/d4af37?text=Invitation+3';">
-                    </div>
-                    <div class="min-w-full aspect-[3/4] relative flex items-center justify-center bg-cyber-950">
-                        <img src="i4.png" alt="Invitation 4" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/600x800/0c0c10/d4af37?text=Invitation+4';">
-                    </div>
+                    <div class="min-w-full aspect-[3/4] relative flex items-center justify-center bg-cyber-950"><img src="i.png" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/600x800/0c0c10/d4af37?text=Invitation';"></div>
+                    <div class="min-w-full aspect-[3/4] relative flex items-center justify-center bg-cyber-950"><img src="i2.png" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/600x800/0c0c10/d4af37?text=Invitation';"></div>
+                    <div class="min-w-full aspect-[3/4] relative flex items-center justify-center bg-cyber-950"><img src="i3.png" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/600x800/0c0c10/d4af37?text=Invitation';"></div>
+                    <div class="min-w-full aspect-[3/4] relative flex items-center justify-center bg-cyber-950"><img src="i4.png" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/600x800/0c0c10/d4af37?text=Invitation';"></div>
                 </div>
             </div>
-            <button onclick="prevSlide(2)" class="absolute left-[-12px] top-1/2 -translate-y-1/2 w-9 h-9 rounded-full glass-panel border border-gold-500/40 text-gold-400 flex items-center justify-center shadow-xl z-20" aria-label="Previous">
-                <i class="fa-solid fa-chevron-left text-xs"></i>
-            </button>
-            <button onclick="nextSlide(2)" class="absolute right-[-12px] top-1/2 -translate-y-1/2 w-9 h-9 rounded-full glass-panel border border-gold-500/40 text-gold-400 flex items-center justify-center shadow-xl z-20" aria-label="Next">
-                <i class="fa-solid fa-chevron-right text-xs"></i>
-            </button>
+            <button onclick="prevSlide(2)" class="absolute left-[-12px] top-1/2 -translate-y-1/2 w-9 h-9 rounded-full glass-panel border border-gold-500/40 text-gold-400 flex items-center justify-center shadow-xl z-25" aria-label="Previous"><i class="fa-solid fa-chevron-left text-xs"></i></button>
+            <button onclick="nextSlide(2)" class="absolute right-[-12px] top-1/2 -translate-y-1/2 w-9 h-9 rounded-full glass-panel border border-gold-500/40 text-gold-400 flex items-center justify-center shadow-xl z-25" aria-label="Next"><i class="fa-solid fa-chevron-right text-xs"></i></button>
         </div>
     </section>
 
     <!-- 3. FESTIVAL WISHES SHOWCASE -->
     <section id="festivals" class="py-16 px-4 max-w-7xl mx-auto" data-aos="fade-up">
-        <div class="mb-8 text-center">
-            <h2 class="font-heading font-extrabold text-xl sm:text-3xl text-white">FESTIVAL WISHES SHOWCASE</h2>
-        </div>
-
+        <div class="mb-8 text-center"><h2 class="font-heading font-extrabold text-xl sm:text-3xl text-white">FESTIVAL WISHES SHOWCASE</h2></div>
         <div class="relative max-w-xs sm:max-w-sm mx-auto">
             <div id="slider-container-3" class="overflow-hidden rounded-2xl glass-panel border border-gold-500/30 shadow-2xl bg-cyber-900">
                 <div id="slider-track-3" class="flex transition-transform duration-500 ease-in-out">
-                    <div class="min-w-full aspect-[3/4] relative flex items-center justify-center bg-cyber-950">
-                        <img src="r.png" alt="Festival 1" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/600x800/0c0c10/d4af37?text=Festival+1';">
-                    </div>
-                    <div class="min-w-full aspect-[3/4] relative flex items-center justify-center bg-cyber-950">
-                        <img src="r2.png" alt="Festival 2" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/600x800/0c0c10/d4af37?text=Festival+2';">
-                    </div>
-                    <div class="min-w-full aspect-[3/4] relative flex items-center justify-center bg-cyber-950">
-                        <img src="r3.png" alt="Festival 3" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/600x800/0c0c10/d4af37?text=Festival+3';">
-                    </div>
+                    <div class="min-w-full aspect-[3/4] relative flex items-center justify-center bg-cyber-950"><img src="r.png" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/600x800/0c0c10/d4af37?text=Festival';"></div>
+                    <div class="min-w-full aspect-[3/4] relative flex items-center justify-center bg-cyber-950"><img src="r2.png" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/600x800/0c0c10/d4af37?text=Festival';"></div>
+                    <div class="min-w-full aspect-[3/4] relative flex items-center justify-center bg-cyber-950"><img src="r3.png" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/600x800/0c0c10/d4af37?text=Festival';"></div>
                 </div>
             </div>
-            <button onclick="prevSlide(3)" class="absolute left-[-12px] top-1/2 -translate-y-1/2 w-9 h-9 rounded-full glass-panel border border-gold-500/40 text-gold-400 flex items-center justify-center shadow-xl z-20" aria-label="Previous">
-                <i class="fa-solid fa-chevron-left text-xs"></i>
-            </button>
-            <button onclick="nextSlide(3)" class="absolute right-[-12px] top-1/2 -translate-y-1/2 w-9 h-9 rounded-full glass-panel border border-gold-500/40 text-gold-400 flex items-center justify-center shadow-xl z-20" aria-label="Next">
-                <i class="fa-solid fa-chevron-right text-xs"></i>
-            </button>
+            <button onclick="prevSlide(3)" class="absolute left-[-12px] top-1/2 -translate-y-1/2 w-9 h-9 rounded-full glass-panel border border-gold-500/40 text-gold-400 flex items-center justify-center shadow-xl z-25" aria-label="Previous"><i class="fa-solid fa-chevron-left text-xs"></i></button>
+            <button onclick="nextSlide(3)" class="absolute right-[-12px] top-1/2 -translate-y-1/2 w-9 h-9 rounded-full glass-panel border border-gold-500/40 text-gold-400 flex items-center justify-center shadow-xl z-25" aria-label="Next"><i class="fa-solid fa-chevron-right text-xs"></i></button>
         </div>
     </section>
 
     <!-- 4. SOCIAL MEDIA CREATIVES -->
     <section id="social" class="py-16 px-4 max-w-7xl mx-auto" data-aos="fade-up">
-        <div class="mb-8 text-center">
-            <h2 class="font-heading font-extrabold text-xl sm:text-3xl text-white">SOCIAL MEDIA CREATIVES</h2>
-        </div>
-
+        <div class="mb-8 text-center"><h2 class="font-heading font-extrabold text-xl sm:text-3xl text-white">SOCIAL MEDIA CREATIVES</h2></div>
         <div class="relative max-w-xs sm:max-w-sm mx-auto">
             <div id="slider-container-4" class="overflow-hidden rounded-2xl glass-panel border border-gold-500/30 shadow-2xl bg-cyber-900">
                 <div id="slider-track-4" class="flex transition-transform duration-500 ease-in-out">
-                    <div class="min-w-full aspect-[3/4] relative flex items-center justify-center bg-cyber-950">
-                        <img src="c.png" alt="Creative 1" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/600x800/0c0c10/d4af37?text=Creative+1';">
-                    </div>
-                    <div class="min-w-full aspect-[3/4] relative flex items-center justify-center bg-cyber-950">
-                        <img src="c2.png" alt="Creative 2" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/600x800/0c0c10/d4af37?text=Creative+2';">
-                    </div>
-                    <div class="min-w-full aspect-[3/4] relative flex items-center justify-center bg-cyber-950">
-                        <img src="c3.png" alt="Creative 3" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/600x800/0c0c10/d4af37?text=Creative+3';">
-                    </div>
-                    <div class="min-w-full aspect-[3/4] relative flex items-center justify-center bg-cyber-950">
-                        <img src="c4.png" alt="Creative 4" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/600x800/0c0c10/d4af37?text=Creative+4';">
-                    </div>
-                    <div class="min-w-full aspect-[3/4] relative flex items-center justify-center bg-cyber-950">
-                        <img src="c5.png" alt="Creative 5" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/600x800/0c0c10/d4af37?text=Creative+5';">
-                    </div>
+                    <div class="min-w-full aspect-[3/4] relative flex items-center justify-center bg-cyber-950"><img src="c.png" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/600x800/0c0c10/d4af37?text=Creative';"></div>
+                    <div class="min-w-full aspect-[3/4] relative flex items-center justify-center bg-cyber-950"><img src="c2.png" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/600x800/0c0c10/d4af37?text=Creative';"></div>
+                    <div class="min-w-full aspect-[3/4] relative flex items-center justify-center bg-cyber-950"><img src="c3.png" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/600x800/0c0c10/d4af37?text=Creative';"></div>
+                    <div class="min-w-full aspect-[3/4] relative flex items-center justify-center bg-cyber-950"><img src="c4.png" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/600x800/0c0c10/d4af37?text=Creative';"></div>
+                    <div class="min-w-full aspect-[3/4] relative flex items-center justify-center bg-cyber-950"><img src="c5.png" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/600x800/0c0c10/d4af37?text=Creative';"></div>
                 </div>
             </div>
-            <button onclick="prevSlide(4)" class="absolute left-[-12px] top-1/2 -translate-y-1/2 w-9 h-9 rounded-full glass-panel border border-gold-500/40 text-gold-400 flex items-center justify-center shadow-xl z-20" aria-label="Previous">
-                <i class="fa-solid fa-chevron-left text-xs"></i>
-            </button>
-            <button onclick="nextSlide(4)" class="absolute right-[-12px] top-1/2 -translate-y-1/2 w-9 h-9 rounded-full glass-panel border border-gold-500/40 text-gold-400 flex items-center justify-center shadow-xl z-20" aria-label="Next">
-                <i class="fa-solid fa-chevron-right text-xs"></i>
-            </button>
+            <button onclick="prevSlide(4)" class="absolute left-[-12px] top-1/2 -translate-y-1/2 w-9 h-9 rounded-full glass-panel border border-gold-500/40 text-gold-400 flex items-center justify-center shadow-xl z-25" aria-label="Previous"><i class="fa-solid fa-chevron-left text-xs"></i></button>
+            <button onclick="nextSlide(4)" class="absolute right-[-12px] top-1/2 -translate-y-1/2 w-9 h-9 rounded-full glass-panel border border-gold-500/40 text-gold-400 flex items-center justify-center shadow-xl z-25" aria-label="Next"><i class="fa-solid fa-chevron-right text-xs"></i></button>
         </div>
     </section>
 
     <!-- 5. PORTRAIT VOICEOVER ADS -->
     <section id="voiceover" class="py-16 px-4 max-w-7xl mx-auto" data-aos="fade-up">
-        <div class="mb-8 text-center">
-            <h2 class="font-heading font-extrabold text-xl sm:text-3xl text-white">PORTRAIT VOICEOVER ADS</h2>
-        </div>
-
+        <div class="mb-8 text-center"><h2 class="font-heading font-extrabold text-xl sm:text-3xl text-white">PORTRAIT VOICEOVER ADS</h2></div>
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
-            <div class="glass-panel rounded-xl p-2 cursor-pointer group" onclick="openVideoPopup('v0.mp4', 'Voiceover Ad - v0')">
-                <div class="aspect-[9/16] rounded-lg overflow-hidden bg-cyber-950 relative flex items-center justify-center">
-                    <video class="w-full h-full object-cover pointer-events-none" preload="metadata"><source src="v0.mp4" type="video/mp4"></video>
-                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center"><div class="w-8 h-8 rounded-full gold-button text-cyber-950 flex items-center justify-center shadow-md"><i class="fa-solid fa-play text-[10px] ml-0.5"></i></div></div>
-                </div>
-            </div>
-            <div class="glass-panel rounded-xl p-2 cursor-pointer group" onclick="openVideoPopup('v1.mp4', 'Voiceover Ad - v1')">
-                <div class="aspect-[9/16] rounded-lg overflow-hidden bg-cyber-950 relative flex items-center justify-center">
-                    <video class="w-full h-full object-cover pointer-events-none" preload="metadata"><source src="v1.mp4" type="video/mp4"></video>
-                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center"><div class="w-8 h-8 rounded-full gold-button text-cyber-950 flex items-center justify-center shadow-md"><i class="fa-solid fa-play text-[10px] ml-0.5"></i></div></div>
-                </div>
-            </div>
-            <div class="glass-panel rounded-xl p-2 cursor-pointer group" onclick="openVideoPopup('v2.mp4', 'Voiceover Ad - v2')">
-                <div class="aspect-[9/16] rounded-lg overflow-hidden bg-cyber-950 relative flex items-center justify-center">
-                    <video class="w-full h-full object-cover pointer-events-none" preload="metadata"><source src="v2.mp4" type="video/mp4"></video>
-                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center"><div class="w-8 h-8 rounded-full gold-button text-cyber-950 flex items-center justify-center shadow-md"><i class="fa-solid fa-play text-[10px] ml-0.5"></i></div></div>
-                </div>
-            </div>
-            <div class="glass-panel rounded-xl p-2 cursor-pointer group" onclick="openVideoPopup('v3.mp4', 'Voiceover Ad - v3')">
-                <div class="aspect-[9/16] rounded-lg overflow-hidden bg-cyber-950 relative flex items-center justify-center">
-                    <video class="w-full h-full object-cover pointer-events-none" preload="metadata"><source src="v3.mp4" type="video/mp4"></video>
-                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center"><div class="w-8 h-8 rounded-full gold-button text-cyber-950 flex items-center justify-center shadow-md"><i class="fa-solid fa-play text-[10px] ml-0.5"></i></div></div>
-                </div>
-            </div>
-            <div class="glass-panel rounded-xl p-2 cursor-pointer group" onclick="openVideoPopup('v4.mp4', 'Voiceover Ad - v4')">
-                <div class="aspect-[9/16] rounded-lg overflow-hidden bg-cyber-950 relative flex items-center justify-center">
-                    <video class="w-full h-full object-cover pointer-events-none" preload="metadata"><source src="v4.mp4" type="video/mp4"></video>
-                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center"><div class="w-8 h-8 rounded-full gold-button text-cyber-950 flex items-center justify-center shadow-md"><i class="fa-solid fa-play text-[10px] ml-0.5"></i></div></div>
-                </div>
-            </div>
-            <div class="glass-panel rounded-xl p-2 cursor-pointer group" onclick="openVideoPopup('v5.mp4', 'Voiceover Ad - v5')">
-                <div class="aspect-[9/16] rounded-lg overflow-hidden bg-cyber-950 relative flex items-center justify-center">
-                    <video class="w-full h-full object-cover pointer-events-none" preload="metadata"><source src="v5.mp4" type="video/mp4"></video>
-                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center"><div class="w-8 h-8 rounded-full gold-button text-cyber-950 flex items-center justify-center shadow-md"><i class="fa-solid fa-play text-[10px] ml-0.5"></i></div></div>
-                </div>
-            </div>
-            <div class="glass-panel rounded-xl p-2 cursor-pointer group" onclick="openVideoPopup('v6.mp4', 'Voiceover Ad - v6')">
-                <div class="aspect-[9/16] rounded-lg overflow-hidden bg-cyber-950 relative flex items-center justify-center">
-                    <video class="w-full h-full object-cover pointer-events-none" preload="metadata"><source src="v6.mp4" type="video/mp4"></video>
-                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center"><div class="w-8 h-8 rounded-full gold-button text-cyber-950 flex items-center justify-center shadow-md"><i class="fa-solid fa-play text-[10px] ml-0.5"></i></div></div>
-                </div>
-            </div>
-            <div class="glass-panel rounded-xl p-2 cursor-pointer group" onclick="openVideoPopup('v7.mp4', 'Voiceover Ad - v7')">
-                <div class="aspect-[9/16] rounded-lg overflow-hidden bg-cyber-950 relative flex items-center justify-center">
-                    <video class="w-full h-full object-cover pointer-events-none" preload="metadata"><source src="v7.mp4" type="video/mp4"></video>
-                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center"><div class="w-8 h-8 rounded-full gold-button text-cyber-950 flex items-center justify-center shadow-md"><i class="fa-solid fa-play text-[10px] ml-0.5"></i></div></div>
-                </div>
-            </div>
-            <div class="glass-panel rounded-xl p-2 cursor-pointer group" onclick="openVideoPopup('v8.mp4', 'Voiceover Ad - v8')">
-                <div class="aspect-[9/16] rounded-lg overflow-hidden bg-cyber-950 relative flex items-center justify-center">
-                    <video class="w-full h-full object-cover pointer-events-none" preload="metadata"><source src="v8.mp4" type="video/mp4"></video>
-                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center"><div class="w-8 h-8 rounded-full gold-button text-cyber-950 flex items-center justify-center shadow-md"><i class="fa-solid fa-play text-[10px] ml-0.5"></i></div></div>
-                </div>
-            </div>
+            <div class="glass-panel rounded-xl p-2 cursor-pointer group" onclick="openVideoPopup('v0.mp4', 'Voiceover Ad - v0')"><div class="aspect-[9/16] rounded-lg overflow-hidden bg-cyber-950 relative flex items-center justify-center"><video class="w-full h-full object-cover pointer-events-none" preload="metadata"><source src="v0.mp4" type="video/mp4"></video><div class="absolute inset-0 bg-black/40 flex items-center justify-center"><div class="w-8 h-8 rounded-full gold-button text-cyber-950 flex items-center justify-center shadow-md"><i class="fa-solid fa-play text-[10px] ml-0.5"></i></div></div></div></div>
+            <div class="glass-panel rounded-xl p-2 cursor-pointer group" onclick="openVideoPopup('v1.mp4', 'Voiceover Ad - v1')"><div class="aspect-[9/16] rounded-lg overflow-hidden bg-cyber-950 relative flex items-center justify-center"><video class="w-full h-full object-cover pointer-events-none" preload="metadata"><source src="v1.mp4" type="video/mp4"></video><div class="absolute inset-0 bg-black/40 flex items-center justify-center"><div class="w-8 h-8 rounded-full gold-button text-cyber-950 flex items-center justify-center shadow-md"><i class="fa-solid fa-play text-[10px] ml-0.5"></i></div></div></div></div>
+            <div class="glass-panel rounded-xl p-2 cursor-pointer group" onclick="openVideoPopup('v2.mp4', 'Voiceover Ad - v2')"><div class="aspect-[9/16] rounded-lg overflow-hidden bg-cyber-950 relative flex items-center justify-center"><video class="w-full h-full object-cover pointer-events-none" preload="metadata"><source src="v2.mp4" type="video/mp4"></video><div class="absolute inset-0 bg-black/40 flex items-center justify-center"><div class="w-8 h-8 rounded-full gold-button text-cyber-950 flex items-center justify-center shadow-md"><i class="fa-solid fa-play text-[10px] ml-0.5"></i></div></div></div></div>
+            <div class="glass-panel rounded-xl p-2 cursor-pointer group" onclick="openVideoPopup('v3.mp4', 'Voiceover Ad - v3')"><div class="aspect-[9/16] rounded-lg overflow-hidden bg-cyber-950 relative flex items-center justify-center"><video class="w-full h-full object-cover pointer-events-none" preload="metadata"><source src="v3.mp4" type="video/mp4"></video><div class="absolute inset-0 bg-black/40 flex items-center justify-center"><div class="w-8 h-8 rounded-full gold-button text-cyber-950 flex items-center justify-center shadow-md"><i class="fa-solid fa-play text-[10px] ml-0.5"></i></div></div></div></div>
+            <div class="glass-panel rounded-xl p-2 cursor-pointer group" onclick="openVideoPopup('v4.mp4', 'Voiceover Ad - v4')"><div class="aspect-[9/16] rounded-lg overflow-hidden bg-cyber-950 relative flex items-center justify-center"><video class="w-full h-full object-cover pointer-events-none" preload="metadata"><source src="v4.mp4" type="video/mp4"></video><div class="absolute inset-0 bg-black/40 flex items-center justify-center"><div class="w-8 h-8 rounded-full gold-button text-cyber-950 flex items-center justify-center shadow-md"><i class="fa-solid fa-play text-[10px] ml-0.5"></i></div></div></div></div>
+            <div class="glass-panel rounded-xl p-2 cursor-pointer group" onclick="openVideoPopup('v5.mp4', 'Voiceover Ad - v5')"><div class="aspect-[9/16] rounded-lg overflow-hidden bg-cyber-950 relative flex items-center justify-center"><video class="w-full h-full object-cover pointer-events-none" preload="metadata"><source src="v5.mp4" type="video/mp4"></video><div class="absolute inset-0 bg-black/40 flex items-center justify-center"><div class="w-8 h-8 rounded-full gold-button text-cyber-950 flex items-center justify-center shadow-md"><i class="fa-solid fa-play text-[10px] ml-0.5"></i></div></div></div></div>
+            <div class="glass-panel rounded-xl p-2 cursor-pointer group" onclick="openVideoPopup('v6.mp4', 'Voiceover Ad - v6')"><div class="aspect-[9/16] rounded-lg overflow-hidden bg-cyber-950 relative flex items-center justify-center"><video class="w-full h-full object-cover pointer-events-none" preload="metadata"><source src="v6.mp4" type="video/mp4"></video><div class="absolute inset-0 bg-black/40 flex items-center justify-center"><div class="w-8 h-8 rounded-full gold-button text-cyber-950 flex items-center justify-center shadow-md"><i class="fa-solid fa-play text-[10px] ml-0.5"></i></div></div></div></div>
+            <div class="glass-panel rounded-xl p-2 cursor-pointer group" onclick="openVideoPopup('v7.mp4', 'Voiceover Ad - v7')"><div class="aspect-[9/16] rounded-lg overflow-hidden bg-cyber-950 relative flex items-center justify-center"><video class="w-full h-full object-cover pointer-events-none" preload="metadata"><source src="v7.mp4" type="video/mp4"></video><div class="absolute inset-0 bg-black/40 flex items-center justify-center"><div class="w-8 h-8 rounded-full gold-button text-cyber-950 flex items-center justify-center shadow-md"><i class="fa-solid fa-play text-[10px] ml-0.5"></i></div></div></div></div>
+            <div class="glass-panel rounded-xl p-2 cursor-pointer group" onclick="openVideoPopup('v8.mp4', 'Voiceover Ad - v8')"><div class="aspect-[9/16] rounded-lg overflow-hidden bg-cyber-950 relative flex items-center justify-center"><video class="w-full h-full object-cover pointer-events-none" preload="metadata"><source src="v8.mp4" type="video/mp4"></video><div class="absolute inset-0 bg-black/40 flex items-center justify-center"><div class="w-8 h-8 rounded-full gold-button text-cyber-950 flex items-center justify-center shadow-md"><i class="fa-solid fa-play text-[10px] ml-0.5"></i></div></div></div></div>
         </div>
     </section>
 
     <!-- Compact Video Popup Modal -->
     <div id="video-modal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden items-center justify-center p-3">
         <div class="relative w-full max-w-[260px] sm:max-w-xs bg-cyber-900 border border-gold-500/50 rounded-2xl overflow-hidden shadow-2xl p-3">
-            <button onclick="closeVideoPopup()" class="absolute top-4 right-4 z-10 w-7 h-7 rounded-full bg-cyber-950 text-gold-400 border border-gold-500/40 flex items-center justify-center" aria-label="Close modal">
-                <i class="fa-solid fa-xmark text-xs"></i>
-            </button>
+            <button onclick="closeVideoPopup()" class="absolute top-4 right-4 z-10 w-7 h-7 rounded-full bg-cyber-950 text-gold-400 border border-gold-500/40 flex items-center justify-center"><i class="fa-solid fa-xmark text-xs"></i></button>
             <div id="modal-title" class="text-[9px] uppercase tracking-widest font-bold text-gold-400 mb-2 px-1">Voiceover Ad</div>
-            <div class="aspect-[9/16] rounded-xl overflow-hidden bg-cyber-950 relative">
-                <video id="modal-video" controls autoplay class="w-full h-full object-cover"><source src="" type="video/mp4"></video>
-            </div>
+            <div class="aspect-[9/16] rounded-xl overflow-hidden bg-cyber-950 relative"><video id="modal-video" controls autoplay class="w-full h-full object-cover"><source src="" type="video/mp4"></video></div>
         </div>
     </div>
 
     <!-- 6. OFFICIAL VISITING CARD (car.png) -->
     <section id="visiting-card" class="py-16 px-4 max-w-4xl mx-auto" data-aos="fade-up">
-        <div class="mb-8 text-center">
-            <h2 class="font-heading font-extrabold text-xl sm:text-3xl text-white">OFFICIAL VISITING CARD</h2>
-        </div>
-
+        <div class="mb-8 text-center"><h2 class="font-heading font-extrabold text-xl sm:text-3xl text-white">OFFICIAL VISITING CARD</h2></div>
         <div class="glass-panel p-4 rounded-2xl border border-gold-500/40 shadow-2xl">
             <div class="rounded-xl overflow-hidden border border-gold-500/30 bg-cyber-950 flex items-center justify-center">
-                <img src="car.png" alt="Gaurav Sinha Visiting Card" class="w-full h-auto object-cover rounded-lg" onerror="this.onerror=null; this.src='https://placehold.co/800x400/0c0c10/d4af37?text=Visiting+Card+(car.png)+Missing';">
-            </div>
-        </div>
-    </section>
-
-    <!-- PROFESSIONAL CERTIFICATION SECTION -->
-    <section id="certification" class="py-16 px-4 max-w-4xl mx-auto" data-aos="fade-up">
-        <div class="mb-8 text-center space-y-2">
-            <span class="text-[10px] uppercase tracking-widest text-gold-400 font-bold px-3 py-1 rounded-full glass-panel border border-gold-500/20">Verified Credentials</span>
-            <h2 class="font-heading font-extrabold text-xl sm:text-3xl text-white">PROFESSIONAL CERTIFICATION</h2>
-        </div>
-
-        <div class="glass-panel p-6 rounded-2xl border border-gold-500/40 shadow-2xl space-y-6">
-            <div class="rounded-xl overflow-hidden border border-gold-500/40 bg-cyber-950">
-                <img src="certificate.png" alt="Graphic Design Essentials Certificate" class="w-full h-auto object-contain" onerror="this.onerror=null; this.src='https://placehold.co/600x400/070709/d4af37?text=Certificate+Preview';">
-            </div>
-
-            <div class="space-y-3 text-center">
-                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gold-500/10 text-gold-400 text-[10px] font-bold uppercase tracking-wider border border-gold-500/30">
-                    <i class="fa-solid fa-award"></i> Canva Design School
-                </div>
-                <h3 class="font-heading font-extrabold text-xl text-white">Graphic Design Essentials</h3>
-                <p class="text-slate-300 text-xs leading-relaxed font-light">
-                    Officially certified by the Canva Team after rigorous training in core design principles, typography, and visual branding.
-                </p>
-                <div class="text-[11px] text-slate-400">
-                    <span class="text-gold-400 font-bold">Credential ID:</span> fa4cd3 • <span class="text-gold-400 font-bold">Issued:</span> Sept 8, 2026
-                </div>
+                <img src="car.png" alt="Visiting Card" class="w-full h-auto object-cover rounded-lg" onerror="this.onerror=null; this.src='https://placehold.co/800x400/0c0c10/d4af37?text=Visiting+Card';">
             </div>
         </div>
     </section>
@@ -520,17 +402,17 @@
             <div class="glass-panel p-5 rounded-2xl space-y-3 border border-gold-500/20">
                 <div class="flex text-gold-400 text-xs gap-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
                 <p class="text-slate-300 text-xs italic">"Gaurav bhai ne hamari website design karke Google par publish karwai aur pamphlets bhi banaye. Ekdam professional kaam!"</p>
-                <div class="text-xs font-bold text-white">— Rajesh Mishra, Principal</div>
+                <div class="text-xs font-bold text-white">— Krish Raj, Principal</div>
             </div>
             <div class="glass-panel p-5 rounded-2xl space-y-3 border border-gold-500/20">
                 <div class="flex text-gold-400 text-xs gap-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
                 <p class="text-slate-300 text-xs italic">"The website publishing on Google and voiceover ad quality are top-notch. Fast delivery and amazing finishing!"</p>
-                <div class="text-xs font-bold text-white">— Amit Kumar, Business Owner</div>
+                <div class="text-xs font-bold text-white">— Adarsh Vikram, Business Owner</div>
             </div>
             <div class="glass-panel p-5 rounded-2xl space-y-3 border border-gold-500/20">
                 <div class="flex text-gold-400 text-xs gap-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
                 <p class="text-slate-300 text-xs italic">"Website maintenance aur monthly poster plan le rakha hai aur kaam time par mil jata hai. Highly recommended!"</p>
-                <div class="text-xs font-bold text-white">— Priya Sharma, Institute Director</div>
+                <div class="text-xs font-bold text-white">— Hemadri, Institute Director</div>
             </div>
         </div>
 
@@ -567,7 +449,7 @@
                 </p>
                 <div>
                     <h3 class="font-heading font-bold text-white text-sm">Gaurav Sinha</h3>
-                    <p class="text-xs text-gold-400 font-semibold">Certified Website & Creative Designer — Purnia, Bihar</p>
+                    <p class="text-xs text-gold-400 font-semibold">Certified Web Developer & Creative Designer — Purnia, Bihar</p>
                 </div>
             </div>
         </div>
@@ -590,19 +472,20 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-cyber-900 border-t border-gold-500/20 py-6 px-4 text-center text-[11px] text-slate-500">
-        <p>© 2026 GAURAVEDITZ09. All Rights Reserved. Designed & Published on Google by Gaurav Sinha • Purnia, Bihar</p>
+    <!-- Footer with Contact Info -->
+    <footer class="bg-cyber-900 border-t border-gold-500/20 py-8 px-4 text-center text-xs text-slate-400 space-y-3">
+        <div class="flex flex-wrap justify-center gap-4 sm:gap-8 text-slate-300 font-medium">
+            <a href="mailto:gs09sinhagaurav@gmail.com" class="hover:text-gold-400 transition-colors"><i class="fa-solid fa-envelope mr-1.5 text-gold-400"></i> gs09sinhagaurav@gmail.com</a>
+            <a href="tel:9122744923" class="hover:text-gold-400 transition-colors"><i class="fa-solid fa-phone mr-1.5 text-gold-400"></i> +91 9122744923</a>
+            <a href="https://instagram.com/gaurav_editz09" target="_blank" class="hover:text-gold-400 transition-colors"><i class="fa-brands fa-instagram mr-1.5 text-gold-400"></i> @gaurav_editz09</a>
+        </div>
+        <p class="text-slate-500 text-[11px]">© 2026 GAURAVEDITZ09. All Rights Reserved. Designed & Published on Google by Gaurav Sinha • Purnia, Bihar</p>
     </footer>
 
     <!-- AOS Animation Library JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({
-            once: true,
-            offset: 50,
-            duration: 800,
-        });
+        AOS.init({ once: true, offset: 50, duration: 800 });
 
         const videoModal = document.getElementById('video-modal');
         const modalVideo = document.getElementById('modal-video');
@@ -624,9 +507,7 @@
         }
 
         videoModal.addEventListener('click', (e) => {
-            if (e.target === videoModal) {
-                closeVideoPopup();
-            }
+            if (e.target === videoModal) closeVideoPopup();
         });
 
         function submitReview(e) {
@@ -647,8 +528,7 @@
         sliders.forEach((slider, index) => {
             const track = document.getElementById(slider.trackId);
             const total = track ? track.children.length : 0;
-            
-            let autoSlide = setInterval(() => {
+            setInterval(() => {
                 slider.current = (slider.current + 1) % total;
                 if(track) track.style.transform = `translateX(-${slider.current * 100}%)`;
             }, 3500 + (index * 200));
